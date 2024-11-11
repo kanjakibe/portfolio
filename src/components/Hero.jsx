@@ -5,6 +5,7 @@ import { ComputersCanvas } from './canvas';
 import { div, section } from 'framer-motion/client';
 
 const Hero = () => {
+  
   return (
     
     <section className='relative w-full h-screen mx-auto'>
