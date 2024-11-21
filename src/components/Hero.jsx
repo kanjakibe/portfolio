@@ -30,7 +30,7 @@ const Hero = () => {
       {/* <ComputersCanvas /> */}
       
       <div className='absolute xs:bottom-[20%] max-sm:w-[100%] max-sm:h-[150%] w-full h-[9%] flex justify-center items-center'>
-            <img src={profile} alt="profile" className='w-[16%] max-sm:w-[30%] rounded-full' />
+            <img src={profile} alt="profile" className='w-[16%] max-sm:w-[50%] rounded-full' />
         </div>
 
       
