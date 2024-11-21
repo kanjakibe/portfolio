@@ -1,18 +1,71 @@
-import { BallCanvas } from "./canvas";
-import { SectionWrapper } from "../hoc";
-import { technologies } from "../constants";
+import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
+import { motion } from 'framer-motion';
 
+import 'react-vertical-timeline-component/style.min.css';
+import { styles } from '../styles';
+import { technologies } from '../constants';
+import { SectionWrapper } from '../hoc';
+import { textVariant } from '../utils/motion';
+import { div, li } from 'framer-motion/client';
 
-const Tech = () => {
+const ExperienceCard = ({technologie}) => {
   return (
-    <div className="flex flex-row flex-wrap justify-center gap-10">
-      {technologies.map((technology) => (
-        <div className="w-28 h-28" key={technology.name}>
-          <BallCanvas icon={technology.icon}/>
+
+  <VerticalTimelineElement
+      contentStyle={{ background: '#1d1836', color:'#fff' }}
+      contentArrowStyle={{ borderRight: '7px solid #232631'}}
+      date={technologie.date}
+      iconStyle={{ background: technologie.iconBg }}
+      icon={
+        <div className='flex justify-center items-center w-full h-full'>
+          {/* <img 
+          src={experience.icon} 
+          alt={experience.company_name} 
+          className='w-[60%] h-[60%] object-contain'
+          /> */}
         </div>
-      ))}
-    </div>
+      }
+  >
+      <div>
+        <h3 className='text-white text-[24px] font-bold'>{technologie.title}</h3>
+        <p className='text-secondary text-[16px] font-semibold' style={{ margin: 0}}>{technologie.company_name}</p>
+     </div>
+
+        <ul className='mt-5 list-disc ml-5 space-y-2'>
+          {technologie  .points.map((point, index) => (
+            <li
+              key={`experience-point-${index}`}
+              className='text-white-100 text-[14px] pl-1 tracking-wider'
+            >
+                {point}
+            </li>
+          ))}
+        </ul>
+      
+  </VerticalTimelineElement>
+
   )
 }
 
-export default SectionWrapper(Tech, "");
+const Experience = () => {
+  return (
+    <>
+    <motion.div variants={textVariant()}>
+        <p className={styles.sectionSubText}>What skils i have</p>
+        <h2 className={styles.sectionHeadText}>Tech.</h2>
+    </motion.div>
+
+    <div className='mt-20 flex flex-col'>
+      <VerticalTimeline>
+          {technologies.map((technologie, index) => (
+            <ExperienceCard key={index} technologie={technologie}/>
+          ))}
+      </VerticalTimeline>
+
+      
+    </div>
+    </>
+  )
+}
+
+export default SectionWrapper(Experience, "work");

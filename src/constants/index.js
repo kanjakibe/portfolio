@@ -19,9 +19,11 @@ import {
     starbucks,
     tesla,
     shopify,
-    carrent,
-    jobit,
-    tripguide,
+    todolist,
+    aquashine,
+    netflix,
+    knitohstore,
+    restaurant,
     threejs,
   } from "../assets";
   
@@ -61,110 +63,88 @@ import {
   
   const technologies = [
     {
-      name: "HTML 5",
-      icon: html,
+      title: "Programming Languages",
+      // company_name: "Tech Skills",
+      // icon: starbucks,
+      iconBg: "#383E56",
+      // date: "March 2020 - April 2021",
+      points: [
+        "Javascript",
+        "PHP",
+        "Python",
+      ],
     },
     {
-      name: "CSS 3",
-      icon: css,
-    },
-    {
-      name: "JavaScript",
-      icon: javascript,
-    },
-    {
-      name: "TypeScript",
-      icon: typescript,
-    },
-    {
-      name: "React JS",
-      icon: reactjs,
-    },
-    {
-      name: "Redux Toolkit",
-      icon: redux,
-    },
-    {
-      name: "Tailwind CSS",
-      icon: tailwind,
-    },
-    {
-      name: "Node JS",
-      icon: nodejs,
-    },
-    {
-      name: "MongoDB",
-      icon: mongodb,
-    },
-    {
-      name: "Three JS",
-      icon: threejs,
-    },
-    {
-      name: "git",
-      icon: git,
-    },
-    {
-      name: "figma",
-      icon: figma,
-    },
-    {
-      name: "docker",
-      icon: docker,
-    },
+      title: "Tech Stack",
+      // company_name: "Tech Skills",
+      // icon: starbucks,
+      iconBg: "#E6DEDD",
+      // date: "March 2020 - April 2021",
+      points: [
+        "PostgreSQL",
+        "Express",
+        "React",
+        "NodeJS",
+        "MySQL",
+      ],
+    }
+    
   ];
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
+      title: "Software Developer",
+      company_name: "Aquashine Limited",
       icon: starbucks,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "June 2023 - June 2024",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+        "Developed a Customer Relation Management system.",
         "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
+      title: "I.T Support",
+      company_name: "Kenya Medical Training College (KMTC)",
       icon: tesla,
       iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      date: "Feb 2022 - Feb 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Monitoring and maintaining computer systems and networks.",
+        "Installing and configuring computer hardware, software, systems, networks and printers",
       ],
     },
     {
-      title: "Web Developer",
-      company_name: "Shopify",
+      title: "Invigilator",
+      company_name: "Kiambu Institute of Science and Technology (KIST)",
       icon: shopify,
       iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      date: "Jan 2021 - Jan 2021",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Helping to set up and check exam rooms before students arrived.",
+        "Overseeing candidates throughout the exam, minimizing distractions, and ensuring they don't communicate with each other.",
       ],
     },
     {
-      title: "Full stack Developer",
-      company_name: "Meta",
+      title: "Technical Assistant",
+      company_name: "Top Choice Surveillance Ltd",
       icon: meta,
       iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
+      date: "Jan 2019 - Mar 2019",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Installing CCTV and data network installation.",
+        "I.T support in the office when needed.",
+      ],
+    },
+    {
+      title: "Mathematics Teacher",
+      company_name: "Supreme Care Primary School",
+      icon: meta,
+      iconBg: "#383E56",
+      date: "Jan 2015 - Nov 2015",
+      points: [
+        "Teaching and tutoring pupils.",
+        
       ],
     },
   ];
@@ -198,67 +178,114 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "CRM",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Web-based application platform that allows users to store records for the business, assign technicians to their duties and generate reports.",
       tags: [
         {
-          name: "react",
+          name: "Javascript",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "PHP",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "Bootstrap",
           color: "pink-text-gradient",
         },
+        {
+          name: "MySQL",
+          color: "blue-text-gradient",
+        }
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: aquashine,
+      source_code_link: "#",
     },
     {
-      name: "Job IT",
+      name: "Netflix - Clone",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Web application with RESTful API to showcase trending, top picks and top rated movies. It is mobile responsive and it has user authentication.",
       tags: [
         {
-          name: "react",
+          name: "React",
+          color: "white-text-gradient",
+        },
+        {
+          name: "RESTful API",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "Tailwind",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "Firebase",
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: netflix,
+      source_code_link: "https://netflix-clone-knon.vercel.app",
     },
     {
-      name: "Trip Guide",
+      name: "To-Do List",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        `Web-based application that allows the user to create, read, update and delete a to-do list.`,
       tags: [
         {
-          name: "nextjs",
+          name: "React",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "Firebase",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "Tailwind",
+          color: "pink-text-gradient",
+        }
+      ],
+      image: todolist,
+      source_code_link: "https://kanjakibe.github.io/todo-React/",
+    },
+    {
+      name: "Nelson Restaurant",
+      description:
+        "Web application which has the menu and about of the restaurant. It is mobile responsive.",
+      tags: [
+        {
+          name: "React",
+          color: "white-text-gradient",
+        },
+        {
+          name: "Figma",
+          color: "blue-text-gradient",
+        },
+        
+      ],
+      image: restaurant,
+      source_code_link: "https://kanjakibe.github.io/restaurant/",
+    },
+    {
+      name: "kNITOH store",
+      description:
+        "An e-commerce website with a collection of clothes, shoes with their prices. It is mobile resposive and gives a good user experience while navigating in the website.",
+      tags: [
+        {
+          name: "Javascript",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "HTML",
+          color: "green-text-gradient",
+        },
+        {
+          name: "CSS",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: knitohstore,
+      source_code_link: "https://kanjakibe.github.io/Ecommerce/",
     },
   ];
   

@@ -26,11 +26,15 @@ import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import aquashine from "./aquashine.png";
+import netflix from "./netflix-clone.png";
+import todolist from "./ToDoList.png";
+import restaurant from "./restaurant.png";
+import knitohstore from "./knitohstore.png";
+import profile from "./profile1.jpg";
 
 export {
+  profile,
   logo,
   backend,
   creator,
@@ -56,7 +60,9 @@ export {
   shopify,
   starbucks,
   tesla,
-  carrent,
-  jobit,
-  tripguide,
+  aquashine,
+  netflix,
+  todolist,
+  restaurant,
+  knitohstore,
 };

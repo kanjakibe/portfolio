@@ -44,8 +44,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-          I'm a skilled software developer with experience in Javascript and PHP, and expertise in frameworks like
-          React, Node.js and Three.js. I am versatile to new technologies and quick to learn them. 
+          I'm a skilled software developer with experience in Javascript, with the PostgreSQL, Express, React and NodeJS stack. I am versatile to new technologies and quick to learn them. 
 
       </motion.p>
 

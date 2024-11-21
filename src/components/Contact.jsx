@@ -6,6 +6,8 @@ import { styles } from '../styles';
 import { EarthCanvas } from './canvas';
 import { SectionWrapper } from '../hoc';
 import { slideIn } from '../utils/motion';
+import { toast } from 'react-toastify';
+
 
 
 const Contact = () => {
@@ -29,10 +31,6 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
-    // 2GTwoZ5mbw85t42y_
-    // template_p5y6pcj 
-    // service_y7ya95w
-
     emailjs.send(
       'service_y7ya95w', 
       'template_p5y6pcj',
@@ -47,7 +45,7 @@ const Contact = () => {
     )
     .then(() => {
       setLoading(false);
-      alert('Thank you. I will get back to you as soon as possible.');
+      toast('Thank you. I will get back to you as soon as possible.');
 
       setForm({
         name: '',
@@ -58,8 +56,7 @@ const Contact = () => {
       setLoading(false)
 
       console.log(error);
-
-      alert('Something went wrong.')
+      toast('Something went wrong.');
     })
   }
   return (
