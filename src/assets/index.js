@@ -26,7 +26,7 @@ import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
-import aquashine from "./aquashine.png";
+import aquashine from "./Aquashine.png";
 import netflix from "./netflix-clone.png";
 import todolist from "./ToDoList.png";
 import restaurant from "./restaurant.png";
