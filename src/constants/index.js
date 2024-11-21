@@ -295,7 +295,7 @@ import {
       tags: [
         {
           name: "Javascript",
-          color: "blue-text-gradient",
+          color: "white-text-gradient",
         },
         {
           name: "RESTful API",
