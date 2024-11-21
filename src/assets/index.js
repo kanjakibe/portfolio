@@ -31,6 +31,7 @@ import netflix from "./netflix-clone.png";
 import todolist from "./todolist.png";
 import restaurant from "./restaurant.png";
 import knitohstore from "./knitohstore.png";
+import lyrical from "./lyrical.png";
 import profile from "./profile1.jpg";
 
 export {
@@ -65,4 +66,5 @@ export {
   todolist,
   restaurant,
   knitohstore,
+  lyrical,
 };

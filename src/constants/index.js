@@ -24,6 +24,7 @@ import {
     netflix,
     knitohstore,
     restaurant,
+    lyrical,
     threejs,
   } from "../assets";
   
@@ -286,6 +287,24 @@ import {
       ],
       image: knitohstore,
       source_code_link: "https://kanjakibe.github.io/Ecommerce/",
+    },
+    {
+      name: "Lyrical",
+      description:
+        `Web-based application that allows the user to enter an artist and a title of the song they have sang then search. The app retrieves the lyrics of the song which was entered.`,
+      tags: [
+        {
+          name: "Javascript",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "RESTful API",
+          color: "green-text-gradient",
+        },
+        
+      ],
+      image: lyrical,
+      source_code_link: "https://lyrical-u1v3.onrender.com/",
     },
   ];
   
