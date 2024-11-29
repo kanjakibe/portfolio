@@ -32,6 +32,7 @@ import todolist from "./todolist.png";
 import restaurant from "./restaurant.png";
 import knitohstore from "./knitohstore.png";
 import lyrical from "./lyrical.png";
+import booknotes from "./booknotes.png";
 import profile from "./profile1.jpg";
 
 export {
@@ -67,4 +68,5 @@ export {
   restaurant,
   knitohstore,
   lyrical,
+  booknotes,
 };

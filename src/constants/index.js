@@ -25,6 +25,7 @@ import {
     knitohstore,
     restaurant,
     lyrical,
+    booknotes,
     threejs,
   } from "../assets";
   
@@ -201,7 +202,7 @@ import {
         }
       ],
       image: aquashine,
-      source_code_link: "#",
+      source_code_link: "https://drive.google.com/file/d/1JfwUbVZam5U6EI5m8U2UBkb-ke31xkW4/view?usp=sharing",
     },
     {
       name: "Netflix - Clone",
@@ -227,6 +228,32 @@ import {
       ],
       image: netflix,
       source_code_link: "https://netflix-clone-knon.vercel.app",
+    },
+    {
+      name: "Book Notes",
+      description:
+        `Web-based application that the user can add books they have read. It uses API to fetch the image of the book which you have 
+        to provide type of code ID/ OLID/ ISBN/ OCLC/ LCCN and the value of the code.`,
+      tags: [
+        {
+          name: "Javascript",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "PostgreSQL",
+          color: "green-text-gradient",
+        },
+        {
+          name: "EJS",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "RESTful API",
+          color: "white-text-gradient",
+        }
+      ],
+      image: booknotes,
+      source_code_link: "https://drive.google.com/file/d/1s4txIeVgbTbSdBp41q75mn6YHwy5pmZK/view?usp=sharing",
     },
     {
       name: "To-Do List",
